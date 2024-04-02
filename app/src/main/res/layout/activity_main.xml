@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNamaApp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/dark_navy"
+        android:drawableStart="@drawable/icon_loc"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp"
+        android:paddingEnd="20dp"
+        android:text="Nation App"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="17dp"
+        android:background="#FBFBFB"
+        tools:listitem="@layout/list_item"/>
+
+</LinearLayout>
